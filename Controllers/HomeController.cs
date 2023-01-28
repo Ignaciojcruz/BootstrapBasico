@@ -98,6 +98,26 @@ namespace IntroduccionABootstrap.Controllers
             return View();
         }
 
+        public IActionResult VentanaEmergente()
+        {
+            return View();
+        }
+
+        public IActionResult Tabs()
+        {
+            return View();
+        }
+
+        public IActionResult OffCanvas()
+        {
+            return View();
+        }
+
+        public IActionResult Toast()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

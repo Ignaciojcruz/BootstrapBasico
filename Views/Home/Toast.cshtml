@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<button type="button" class="btn btn-primary" onclick="mostrarToast()">Mostrar toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="miToast" class="toast">
+        <div class="toast-header">
+            <strong class="me-auto">Mensaje enviado</strong>
+            <small>Hace unos instantes</small>
+            <button class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            El mensaje fue enviado a Juan.
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function mostrarToast(){
+            var ejemploToast = document.getElementById('miToast');
+            var toast = new bootstrap.Toast(ejemploToast);
+            toast.show();
+        }
+    </script>
+}
